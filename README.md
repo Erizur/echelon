@@ -16,10 +16,20 @@ ___
   <img src="images/preview.png" alt="Echelon logo">
 </p>
 
-## Installation
-As this rewrite is still in the works, there are no releases for it yet. But, you can download compiled builds in [Github Actions](https://github.com/echelon-theme/echelon/actions). Download the source code no longer works as it only has the uncompiled SCSS files.
+## Coming from Echelon 1?
+Echelon versions before release 2.0 is no longer supported. The update checker may display an error message, if you wish to continue using Echelon 1, disable update checks on the Echelon Options window.
 
-## Developers
+## Screenshots
+| ![preview-1](images/preview-1.png) | ![preview-2](images/preview-2.png) |
+|---|---|
+| ![preview-3](images/preview-3.png) | ![preview-4](images/preview-4.png) |
+
+# Installation
+Detailed instructions on how to install Echelon can be seen here:
+
+[Instructions of installing Echelon](https://github.com/echelon-theme/echelon/wiki/Installation)
+
+# Developers
 * [Travis](https://github.com/travy-patty/)
 * [aubymori](https://github.com/aubymori) 
 * [Isabella Lulamoon](https://github.com/kawapure/)

@@ -76,12 +76,12 @@
 			grid-area: tabbar !important;
 		}
 	}
+}
 
-	@media all and (-moz-windows-classic) { 
-		&:not([sizemode="maximized"]) {
-			.titlebar-buttonbox {
-				appearance: auto !important;
-			}
+@media all and (-moz-windows-classic) { 
+	:root:not([sizemode="maximized"]) {
+		.titlebar-buttonbox {
+			appearance: auto !important;
 		}
 	}
 }
@@ -90,6 +90,12 @@
 @media (-moz-platform: windows) {
 	.titlebar-buttonbox-container {
 		align-items: flex-start !important;
+	}
+
+	@media (-moz-windows-classic) {
+		#toolbar-menubar {
+			margin-block-start: 0 !important;
+		}
 	}
 	
     @media not (-moz-windows-classic) {
@@ -126,6 +132,14 @@
 
 			:root[tabsintitlebar][sizemode="normal"]:not([echelon-style-6]) #toolbar-menubar[inactive="true"] + #TabsToolbar .toolbar-items {
 				padding-top: 2px !important;
+			}
+		}
+
+		@media not (-moz-windows-compositor) {
+			:root[sizemode="normal"][tabsintitlebar] {
+				.titlebar-buttonbox {
+					margin-block-start: var(--paddedborder);
+				}
 			}
 		}
     }
